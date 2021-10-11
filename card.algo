@@ -1,0 +1,30 @@
+FUNCTION sort_card(arr:ARRAY_OF INTEGER, n:INTEGER) :ARRAY_OF INTEGER
+VAR
+        i,j,key:INTEGER;
+        
+BEGIN
+
+    FOR i FROM 0 TO N STEP step  DO
+        key = arr[i];
+        j= i-1;
+
+
+        WHILE (j>=0 and arr[j]>Key) DO
+            arr[j+1] = arr[j] ;
+               j = j-1 ;
+        END_WHILE
+        arr[j+1]=key;
+    END_FOR
+    RETURN (arr[j],n) ;
+END
+
+
+
+
+ALGORITHM card_distrub
+VAR
+    Arr : ARRAY_OF INTEGER;
+    i,j,key:INTEGER;
+BEGIN
+   arr-sorted:= sort_card(arr,n);
+END
