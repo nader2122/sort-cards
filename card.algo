@@ -4,7 +4,7 @@ VAR
         
 BEGIN
 
-    FOR i FROM 0 TO N STEP step  DO
+    FOR i FROM 0 TO n STEP DO
         key = arr[i];
         j= i-1;
 
